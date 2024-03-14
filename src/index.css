@@ -4,121 +4,36 @@
  
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
- 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
- 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
- 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
- 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
- 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
- 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
- 
-    --radius: 0.5rem;
-
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: var(--ctp-frappe-text);
-  background-color: var(--ctp-frappe-crust);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  --ctp-frappe-rosewater: #f2d5cf;
-  --ctp-frappe-flamingo: #eebebe;
-  --ctp-frappe-pink: #f4b8e4;
-  --ctp-frappe-mauve: #ca9ee6;
-  --ctp-frappe-red: #e78284;
-  --ctp-frappe-maroon: #ea999c;
-  --ctp-frappe-peach: #ef9f76;
-  --ctp-frappe-yellow: #e5c890;
-  --ctp-frappe-green: #a6d189;
-  --ctp-frappe-teal: #81c8be;
-  --ctp-frappe-sky: #99d1db;
-  --ctp-frappe-sapphire: #85c1dc;
-  --ctp-frappe-blue: #8caaee;
-  --ctp-frappe-lavender: #babbf1;
-  --ctp-frappe-text: #c6d0f5;
-  --ctp-frappe-subtext1: #b5bfe2;
-  --ctp-frappe-subtext0: #a5adce;
-  --ctp-frappe-overlay2: #949cbb;
-  --ctp-frappe-overlay1: #838ba7;
-  --ctp-frappe-overlay0: #737994;
-  --ctp-frappe-surface2: #626880;
-  --ctp-frappe-surface1: #51576d;
-  --ctp-frappe-surface0: #414559;
-  --ctp-frappe-base: #303446;
-  --ctp-frappe-mantle: #292c3c;
-  --ctp-frappe-crust: #232634; */
+  --ctp-rosewater: #dc8a78;
+  --ctp-flamingo:  #dd7878;
+  --ctp-pink:      #ea76cb;
+  --ctp-mauve:     #8839ef;
+  --ctp-red:       #d20f39;
+  --ctp-maroon:    #e64553;
+  --ctp-peach:     #fe640b;
+  --ctp-yellow:    #df8e1d;
+  --ctp-green:     #40a02b;
+  --ctp-teal:      #179299;
+  --ctp-sky:       #04a5e5;
+  --ctp-sapphire:  #209fb5;
+  --ctp-blue:      #1e66f5;
+  --ctp-lavender:  #7287fd;
+  --ctp-text:      #4c4f69;
+  --ctp-subtext1:  #5c5f77;
+  --ctp-subtext0:  #6c6f85;
+  --ctp-overlay2:  #7c7f93;
+  --ctp-overlay1:  #8c8fa1;
+  --ctp-overlay0:  #9ca0b0;
+  --ctp-surface2:  #acb0be;
+  --ctp-surface1:  #bcc0cc;
+  --ctp-surface0:  #ccd0da;
+  --ctp-base:      #eff1f5;
+  --ctp-mantle:    #e6e9ef;
+  --ctp-crust:     #dce0e8;
+  --radius: 0.5rem;
   }
  
   .dark {
-    --background: 222.2 84% 4.9%; 
-    --foreground: 210 40% 98%;
- 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
- 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
- 
-    --primary: #303446;
-    --primary-foreground: 222.2 47.4% 11.2%;
- 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
- 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
- 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
- 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
- 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%; 
-
-    --hover:#ca9ee6;
-
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  /* color-scheme: light dark;
-  color: var(--ctp-frappe-text);
-  background-color: var(--ctp-frappe-crust); */
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
   --ctp-rosewater: #f2d5cf;
   --ctp-flamingo: #eebebe;
   --ctp-pink: #f4b8e4;
@@ -145,15 +60,16 @@
   --ctp-base: #303446;
   --ctp-mantle: #292c3c;
   --ctp-crust: #232634;
+  --radius: 0.5rem;
   }
 }
  
 @layer base {
   * {
-    @apply border-border;
+    @apply border-mauve;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-crust text-text;
   }
 }
 /* ------------------------------------------------ */
