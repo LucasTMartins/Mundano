@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+
+.minha-div {
+    position: fixed;
+    right: 40%;
+    height: 100vh; /* 100% da altura da viewport */
+    background-color: #3498db; /* Cor de fundo para visualização */
+  }
