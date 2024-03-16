@@ -1,23 +1,23 @@
 import "./App.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Button } from "@/components/ui/button"
-import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from "@/components/ui/resizable"
+// import { Button } from "@/components/ui/button";
+// import {
+//   ResizableHandle,
+//   ResizablePanel,
+//   ResizablePanelGroup,
+// } from "@/components/ui/resizable";
+import Header from "@/components/home/Header";
 
 function App() {
   return (
     <ThemeProvider defaultTheme="dark">
-      <Button variant="default">Button</Button>
-      <ResizablePanelGroup direction="horizontal">
-        <ResizablePanel>
-          <div>
-            <h1>Vite + React</h1>
-          </div>
-        </ResizablePanel>
-        <ResizableHandle />
-        <ResizablePanel>
-          <Button variant="default">Button</Button>
-        </ResizablePanel>
-      </ResizablePanelGroup>
+      <Header></Header>
+      <div className="flex justify-center w-screen pt-24">
+        <img src="src/assets/Logo.svg" alt="Logo" className="h-96" />
+      </div>
+      <div className="flex justify-center w-screen">
+        <a href="/" className="custom-font-class2 text-text hover:text-mauve transition">Mundano</a>
+      </div>
     </ThemeProvider>
   );
 }
