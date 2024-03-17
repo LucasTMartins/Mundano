@@ -5,12 +5,12 @@
   text-align: center;
 }
 
-.custom-font-class {
+.logo-font {
   font-family: 'ProtestStrike_Regular', sans-serif;
-  font-size: 30px;
+  font-size: 26px;
 }
 
-.custom-font-class2 {
-  font-family: 'ProtestStrike_Regular', sans-serif;
-  font-size: 42px;
+.standard-font {
+  font-family: 'MavenPro_Medium', serif;
+  font-size: 15px;
 }

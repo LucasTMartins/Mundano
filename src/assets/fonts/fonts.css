@@ -1,6 +1,20 @@
 @font-face {
-    font-family: 'ProtestStrike_Regular';
-    src: url('ProtestStrike_Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "ProtestStrike_Regular";
+  src: url("ProtestStrike/ProtestStrike_Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MavenPro_Regular";
+  src: url("MavenPro/MavenPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MavenPro_Medium";
+  src: url("MavenPro/MavenPro-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
