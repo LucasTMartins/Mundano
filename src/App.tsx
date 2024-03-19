@@ -1,6 +1,7 @@
 import "./App.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/home/Header";
+import Toolbar  from "./components/home/Toolbar";
 import Entities from "@/components/home/Entities";
 import {
   ResizableHandle,
@@ -10,24 +11,25 @@ import {
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="dark">
+    <ThemeProvider defaultTheme="light">
       <Header></Header>
-      {/* <ResizablePanelGroup direction="horizontal">
-        <ResizablePanel>One</ResizablePanel>
+      {/* <Toolbar></Toolbar> */}
+      <ResizablePanelGroup direction="horizontal">
+        <ResizablePanel minSize={50}>Two</ResizablePanel>
         <ResizableHandle />
-        <ResizablePanel>Two</ResizablePanel>
-        <ResizableHandle />
-        <ResizablePanel>
+        <ResizablePanel className="h-screen mt-[-2.5rem]" minSize={20} defaultSize={20}>
           <ResizablePanelGroup direction="vertical">
-            <ResizablePanel>One</ResizablePanel>
+            <ResizablePanel className="mt-[2.5rem]" minSize={35}>
+              <Entities className="pt-[7px] h-full"></Entities>
+            </ResizablePanel>
             <ResizableHandle />
-            <ResizablePanel>
-              <Entities></Entities>
+            <ResizablePanel minSize={35}>
+              <Entities className="pb-[7px] h-full"></Entities>
             </ResizablePanel>
           </ResizablePanelGroup>
         </ResizablePanel>
-      </ResizablePanelGroup> */}
-      <Entities></Entities>
+      </ResizablePanelGroup>
+      {/* <Entities></Entities> */}
     </ThemeProvider>
   );
 }
