@@ -1,9 +1,7 @@
-import "./Header.css"
-
 const Header = () => {
   return (
     <header
-      className={`bg-base shadow-md rounded-b-sm h-[var(--header-height)] px-4 border-[1px] 
+      className={`bg-base shadow-md rounded-b-sm h-[2.5rem] px-4 border-[1px] 
       border-surface1 flex items-center justify-between`}
     >
       <div className="flex items-center">
@@ -12,7 +10,7 @@ const Header = () => {
           Mundano
         </a>
       </div>
-      <nav>
+      {/* <nav>
         <ul className="flex items-center space-x-4">
           <li>
             <a href="/" className="text-text hover:text-mauve transition">
@@ -33,7 +31,7 @@ const Header = () => {
             </a>
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </header>
   );
 };

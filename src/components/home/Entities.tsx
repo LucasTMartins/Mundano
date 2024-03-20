@@ -11,17 +11,17 @@ const Entities : React.FC<EntitiesProps> = ({ className }) => {
     <div className={cn("flex py-[3.5px] pr-[7px] relative", className)}>
       <Tabs
         defaultValue="cenarios"
-        className={`w-full h-full shadow-md pt-[5px] bg-base 
+        className={`w-full h-full shadow-md pt-3 bg-base 
         rounded-sm border-[1px] border-surface1 standard-font overflow-auto`}
       >
         <TabsList>
-          <TabsTrigger value="cenarios">
+          <TabsTrigger value="cenarios" className="text-md">
             Cenários
           </TabsTrigger>
-          <TabsTrigger value="entidades">
+          <TabsTrigger value="entidades" className="text-md">
             Entidades
           </TabsTrigger>
-          <TabsTrigger value="objetos">
+          <TabsTrigger value="objetos" className="text-md">
             Objetos
           </TabsTrigger>
         </TabsList>
@@ -29,7 +29,7 @@ const Entities : React.FC<EntitiesProps> = ({ className }) => {
           Aqui ficarão os cenários
         </TabsContent>
         <TabsContent value="entidades">
-          Aqui ficarão os entidades
+          Aqui ficarão as entidades
         </TabsContent>
         <TabsContent value="objetos">
           Aqui ficarão os objetos

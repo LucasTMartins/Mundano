@@ -1,7 +1,7 @@
 import "./App.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/home/Header";
-import Toolbar  from "./components/home/Toolbar";
+import Properties from "@/components/home/Properties"
 import Entities from "@/components/home/Entities";
 import {
   ResizableHandle,
@@ -12,7 +12,7 @@ import {
 function App() {
   return (
     <ThemeProvider defaultTheme="light">
-      <Header></Header>
+      <Header />
       {/* <Toolbar></Toolbar> */}
       <ResizablePanelGroup direction="horizontal">
         <ResizablePanel minSize={50}>Two</ResizablePanel>
@@ -20,16 +20,15 @@ function App() {
         <ResizablePanel className="h-screen mt-[-2.5rem]" minSize={20} defaultSize={20}>
           <ResizablePanelGroup direction="vertical">
             <ResizablePanel className="mt-[2.5rem]" minSize={35}>
-              <Entities className="pt-[7px] h-full"></Entities>
+              <Properties className="pt-[7px] h-full" />
             </ResizablePanel>
             <ResizableHandle />
             <ResizablePanel minSize={35}>
-              <Entities className="pb-[7px] h-full"></Entities>
+              <Entities className="pb-[7px] h-full" />
             </ResizablePanel>
           </ResizablePanelGroup>
         </ResizablePanel>
       </ResizablePanelGroup>
-      {/* <Entities></Entities> */}
     </ThemeProvider>
   );
 }
