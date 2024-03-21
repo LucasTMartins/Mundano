@@ -5,6 +5,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useTheme } from "../theme-provider";
+import { MdOutlineWbSunny } from "react-icons/md";
 
 const ThemeSwitcher = () => {
   const { setTheme } = useTheme();
@@ -16,7 +17,7 @@ const ThemeSwitcher = () => {
           className="focus:border rounded-sm select-none items-center px-3 py-1.5 text-sm 
             text-text standard-font outline-none rounded-sm focus:border"
         >
-          Tema
+          <MdOutlineWbSunny className="h-6 w-6" />
         </DropdownMenuTrigger>
         <DropdownMenuContent>
           <DropdownMenuItem onClick={() => setTheme("light")}>

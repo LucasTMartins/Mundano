@@ -1,5 +1,8 @@
 import { cn } from "@/lib/utils";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { PiGraph } from "react-icons/pi";
+import { PiNotepad } from "react-icons/pi";
+import { MdQuestionMark } from "react-icons/md";
 
 // Define uma interface para as props do componente
 interface ToolbarProps {
@@ -17,13 +20,13 @@ const Toolbar: React.FC<ToolbarProps> = ({ className }) => {
         <div className="flex h-full">
           <TabsList className="flex flex-col justify-start h-full w-[4rem] border-[1px] border-surface1 rounded-l-[0px]">
             <TabsTrigger value="grafos" className="text-md">
-              C
+              <PiGraph className="w-6 h-6" />
             </TabsTrigger>
             <TabsTrigger value="notas" className="text-md">
-              E
+              <PiNotepad className="w-6 h-6" />
             </TabsTrigger>
             <TabsTrigger value="outros" className="text-md">
-              O
+            <MdQuestionMark className="w-6 h-6" />
             </TabsTrigger>
           </TabsList>
 
