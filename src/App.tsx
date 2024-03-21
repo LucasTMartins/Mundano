@@ -12,7 +12,7 @@ import {
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="light">
+    <ThemeProvider defaultTheme="system">
       <Header />
       <ResizablePanelGroup direction="horizontal">
         <ResizablePanel minSize={54}>

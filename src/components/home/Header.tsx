@@ -1,13 +1,5 @@
-import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarTrigger,
-} from "@/components/ui/menubar";
 import ThemeSwitcher from "./ThemeSwitcher";
+import MenubarHome from "./MenubarHome";
 
 const Header = () => {
   return (
@@ -23,38 +15,7 @@ const Header = () => {
         >
           Mundano
         </a>
-        <Menubar className="ml-[1rem]">
-          <MenubarMenu>
-            <MenubarTrigger className="hover:text-mauve">
-              Arquivos
-            </MenubarTrigger>
-            <MenubarContent>
-              <MenubarItem>
-                New Tab <MenubarShortcut>Ctrl+T</MenubarShortcut>
-              </MenubarItem>
-              <MenubarItem>
-                New Window <MenubarShortcut>Ctrl+N</MenubarShortcut>
-              </MenubarItem>
-              <MenubarSeparator />
-              <MenubarItem>Share</MenubarItem>
-              <MenubarSeparator />
-              <MenubarItem>Print</MenubarItem>
-            </MenubarContent>
-          </MenubarMenu>
-          <MenubarMenu>
-            <MenubarTrigger className="hover:text-mauve">Editar</MenubarTrigger>
-            <MenubarContent>
-              <MenubarItem>
-                New Tab <MenubarShortcut>⌘T</MenubarShortcut>
-              </MenubarItem>
-              <MenubarItem>New Window</MenubarItem>
-              <MenubarSeparator />
-              <MenubarItem>Share</MenubarItem>
-              <MenubarSeparator />
-              <MenubarItem>Print</MenubarItem>
-            </MenubarContent>
-          </MenubarMenu>
-        </Menubar>
+        <MenubarHome />
       </div>
       <ThemeSwitcher />
     </header>

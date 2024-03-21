@@ -10,27 +10,33 @@ const Toolbar: React.FC<ToolbarProps> = ({ className }) => {
   return (
     <div className={cn("flex h-full p-[7px] relative", className)}>
       <Tabs
-        defaultValue="cenarios"
+        defaultValue="grafos"
         className={`w-full h-full shadow-md bg-base 
         rounded-sm border-[1px] border-surface1 standard-font overflow-auto`}
       >
         <div className="flex h-full">
           <TabsList className="flex flex-col justify-start h-full w-[4rem] border-[1px] border-surface1 rounded-l-[0px]">
-            <TabsTrigger value="cenarios" className="text-md">
+            <TabsTrigger value="grafos" className="text-md">
               C
             </TabsTrigger>
-            <TabsTrigger value="entidades" className="text-md">
+            <TabsTrigger value="notas" className="text-md">
               E
             </TabsTrigger>
-            <TabsTrigger value="objetos" className="text-md">
+            <TabsTrigger value="outros" className="text-md">
               O
             </TabsTrigger>
           </TabsList>
 
           <div className="flex-1">
-            <TabsContent value="cenarios"></TabsContent>
-            <TabsContent value="entidades"></TabsContent>
-            <TabsContent value="objetos"></TabsContent>
+            <TabsContent value="grafos" className="h-full mt-0 pt-2">
+              <h1 className="text-xl">Grafos aqui</h1>
+            </TabsContent>
+            <TabsContent value="notas" className="h-full mt-0 pt-2">
+              <h1 className="text-xl">Notas aqui</h1>
+            </TabsContent>
+            <TabsContent value="outros" className="h-full mt-0 pt-2">
+              <h1 className="text-xl">Outros aqui</h1>
+            </TabsContent>
           </div>
         </div>
       </Tabs>
