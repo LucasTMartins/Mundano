@@ -14,7 +14,6 @@ function App() {
   return (
     <ThemeProvider defaultTheme="light">
       <Header />
-      {/* <Toolbar></Toolbar> */}
       <ResizablePanelGroup direction="horizontal">
         <ResizablePanel minSize={54}>
           <Main></Main>
