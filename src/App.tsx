@@ -2,7 +2,7 @@ import "./App.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Main from "@/components/home/Main";
 import Header from "@/components/home/Header";
-import Properties from "@/components/home/Properties"
+import Properties from "@/components/home/Properties";
 import Entities from "@/components/home/Entities";
 import {
   ResizableHandle,
@@ -16,10 +16,14 @@ function App() {
       <Header />
       <ResizablePanelGroup direction="horizontal">
         <ResizablePanel minSize={54}>
-          <Main></Main>
+          <Main />
         </ResizablePanel>
         <ResizableHandle />
-        <ResizablePanel className="h-screen mt-[-2.5rem]" minSize={20} defaultSize={20}>
+        <ResizablePanel
+          className="h-screen mt-[-2.5rem]"
+          minSize={20}
+          defaultSize={20}
+        >
           <ResizablePanelGroup direction="vertical">
             <ResizablePanel className="mt-[2.5rem]" minSize={35}>
               <Properties className="pt-[7px] h-full" />
