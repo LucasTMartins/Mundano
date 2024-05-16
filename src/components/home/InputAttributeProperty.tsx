@@ -22,7 +22,7 @@ const InputAttributeProperty = React.forwardRef<HTMLInputElement, InputProps>(
         onChange={handleChange}
         className={cn(
           `flex h-10 w-full rounded-[1rem] border border-surface2 bg-surface0 
-          px-3 py-2 text-sm ring-mauve file:border-0 file:bg-transparent 
+          px-3 py-2 text-sm ring-mauve file:border-0 file:bg-transparent
           file:text-sm file:standard-font placeholder:text-text placeholder:opacity-50 
           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
           disabled:opacity-50 ${inputValue ? 'bg-transparent border-transparent' : ''}`,

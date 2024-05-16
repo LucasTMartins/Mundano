@@ -14,7 +14,6 @@ const InputProperty: React.FC<InputPropertyProps> = ({ className }) => {
         className
       )}
     >
-      {/* <Input placeholder="Atributo" className="bg-transparent border-transparent" />  */}
       <InputAttributeProperty /> 
       <h1 className="text-2xl text-text px-1 select-none">:</h1>
       <Input />
