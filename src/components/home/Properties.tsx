@@ -10,27 +10,12 @@ interface PropertiesProps {
 }
 
 const Properties: React.FC<PropertiesProps> = ({ className }) => {
-const [inputs, setInputs] = useState<JSX.Element[]>([]);
+  const [inputs, setInputs] = useState<JSX.Element[]>([]);
 
   const adicionarInputCustomizado = () => {
     const novoInput = <InputProperty />;
     setInputs([...inputs, novoInput]);
   };
-
-  // Função para capturar todas as linhas de entrada
-  // const capturarLinhasDeEntrada = () => {
-  //   const linhasDeEntrada: JSX.Element[] = [];
-  //   // Iterar sobre cada elemento na lista inputs
-  //   inputs.forEach((input, index) => {
-  //     // Adicionar a linha de entrada atual à lista de linhas de entrada
-  //     linhasDeEntrada.push(
-  //       <div key={index} className="linha-de-entrada">
-  //         {input}
-  //       </div>
-  //     );
-  //   });
-  //   return linhasDeEntrada;
-  // };
 
   return (
     <div
@@ -52,7 +37,6 @@ const [inputs, setInputs] = useState<JSX.Element[]>([]);
           </Button>
         </div>
         <div id="itens_properties">{inputs}</div>
-        {/* <div id="itens_properties">{capturarLinhasDeEntrada()}</div> */}
       </ScrollArea>
     </div>
   );

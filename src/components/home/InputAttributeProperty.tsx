@@ -13,6 +13,7 @@ const InputAttributeProperty = React.forwardRef<HTMLInputElement, InputProps>(
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       setInputValue(e.target.value);
+      console.log(inputValue);      
     };
 
     return (
