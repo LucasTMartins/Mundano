@@ -18,8 +18,8 @@ const Entities : React.FC<EntitiesProps> = ({ className }) => {
           <TabsTrigger value="cenarios" className="text-md">
             Cenários
           </TabsTrigger>
-          <TabsTrigger value="entidades" className="text-md">
-            Entidades
+          <TabsTrigger value="personagens" className="text-md">
+            Personagens
           </TabsTrigger>
           <TabsTrigger value="objetos" className="text-md">
             Objetos
@@ -28,8 +28,8 @@ const Entities : React.FC<EntitiesProps> = ({ className }) => {
         <TabsContent value="cenarios">
           Aqui ficarão os cenários
         </TabsContent>
-        <TabsContent value="entidades">
-          Aqui ficarão as entidades
+        <TabsContent value="personagens">
+          Aqui ficarão as personagens
         </TabsContent>
         <TabsContent value="objetos">
           Aqui ficarão os objetos
