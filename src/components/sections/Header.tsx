@@ -1,5 +1,5 @@
-import ThemeSwitcher from "./ThemeSwitcher";
-import MenubarHome from "./MenubarHome";
+import ThemeSwitcher from "@/components/blocks/ThemeSwitcher";
+import MenubarHome from "@/components/blocks/MenubarHome";
 
 const Header = () => {
   return (

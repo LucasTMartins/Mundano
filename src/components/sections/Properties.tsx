@@ -2,7 +2,36 @@ import { cn } from "@/lib/utils";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import InputProperty from "./InputProperty";
+import { Input } from "@/components/ui/input";
+
+interface InputPropertyProps {
+  className?: string; // Define className como opcional e do tipo string
+}
+
+const InputProperty: React.FC<InputPropertyProps> = (
+  { className }) => {
+  const [inputValue, setInputValue] = useState("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setInputValue(e.target.value);
+  };
+
+  return (
+    <div
+      className={cn(
+        "flex py-[3.5px] px-[7px] relative standard-font",
+        className
+      )}
+    >
+      <Input 
+      value={inputValue}
+      onChange={handleChange}
+      className={cn(`${inputValue ? "bg-transparent border-transparent" : ""}`)} />
+      <h1 className="text-2xl text-text px-1 select-none">:</h1>
+      <Input />
+    </div>
+  );
+};
 
 // Define uma interface para as props do componente
 interface PropertiesProps {

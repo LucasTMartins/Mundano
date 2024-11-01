@@ -4,7 +4,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useTheme } from "../theme-provider";
+import { useTheme } from "@/components/theme-provider";
 import { MdOutlineWbSunny } from "react-icons/md";
 
 const ThemeSwitcher = () => {
